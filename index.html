@@ -1,0 +1,22 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="wrapper">Page 1</div>
+    <form name="myForm">
+      <input type="button" onClick="myFun(this)" value="click1" />
+      <input type="button" onClick="myFun(this)" value="click2" />
+      <input type="button" onClick="myFun(this)" value="click3" />
+    </form>
+    <script>
+      var output = document.getElementById("wrapper");
+      function myFunction() {
+        output.innerHTML = t.value;
+      }
+    </script>
+  </body>
+</html>
