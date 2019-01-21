@@ -14,9 +14,11 @@
     </form>
     <script>
       var output = document.getElementById("wrapper");
-      document.getElementById("id1").onclick = function() {
+      document.getElementById("id1").onclick = myFun;
+      function myFun() {
+        console.log(this);
         output.innerHTML = "WORKED";
-      };
+      }
     </script>
   </body>
 </html>
