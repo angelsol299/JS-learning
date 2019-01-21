@@ -8,16 +8,15 @@
   <body>
     <div id="wrapper">Page 1</div>
     <form name="myForm">
-      <input type="button" onClick="myFun(this)" value="click1" />
-      <input type="button" onClick="myFun(this)" value="click2" />
-      <input type="button" onClick="myFun(this)" value="click3" />
+      <input type="button" value="click1" id="id1" />
+      <input type="button" value="click2" id="id2" />
+      <input type="button" value="click3" id="id3" />
     </form>
     <script>
       var output = document.getElementById("wrapper");
-      function myFun(t) {
-        console.dir(t);
-        output.innerHTML = t.value;
-      }
+      document.getElementById("id1").onclick = function() {
+        output.innerHTML = "WORKED";
+      };
     </script>
   </body>
 </html>
