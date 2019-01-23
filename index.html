@@ -19,9 +19,11 @@
         console.dir(this);
         output.innerHTML = "WORKED";
 
-        window.onload = fuction (event){myFun("window")};
+        window.onload = fuction (event){
+          //myFun("window")
+          };
 
-        function myFun() {
+        function myFun(a) {
           output.innerHTML = "Welcome all loaded" + a;
         }
       }
