@@ -5,28 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
   </head>
-  <body onload="myFun('body')">
+  <body>
     <div id="wrapper">Page 1</div>
-    <form name="myForm">
-      <input type="button" value="click1" id="id1" />
-      <input type="button" value="click2" id="id2" />
-      <input type="button" value="click3" id="id3" />
-    </form>
-    <script>
-      var output = document.getElementById("wrapper");
-      document.getElementById("id1").onclick = myFun;
-      function myFun() {
-        console.dir(this);
-        output.innerHTML = "WORKED";
-
-        window.onload = fuction (event){
-          //myFun("window")
-          };
-
-        function myFun(a) {
-          output.innerHTML = "Welcome all loaded" + a;
-        }
-      }
-    </script>
+    <img
+      id="imgSwap"
+      onmouseover="clmg(this)"
+      width="600px"
+      src="https://www.tomorrowland.com/src/Frontend/Themes/tomorrowland/Core/Layout/images/opengraph/tomorrowland.jpg"
+      alt="TML"
+    />
+    <script></script>
   </body>
 </html>
