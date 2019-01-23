@@ -16,7 +16,12 @@
     />
     <script>
       function clmg(t) {
-        document.getElementById("wrapper").innerHTML = t.src;
+        message(t.src);
+        t.src =
+      }
+
+      function message(m) {
+        document.getElementById("wrapper").innerHTML = m;
       }
     </script>
   </body>
