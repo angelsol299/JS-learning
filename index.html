@@ -12,12 +12,14 @@
       onmouseover="clmg(this)"
       onmouseout="blmg(this)"
       width="600px"
-      src="https://www.tomorrowland.com/src/Frontend/Themes/tomorrowland/Core/Layout/images/opengraph/tomorrowland.jpg"
-      alt="TML"
     />
     <script>
       var imgHolder =
         "https://www.tomorrowland.com/src/Frontend/Themes/tomorrowland/Core/Layout/images/opengraph/tomorrowland.jpg";
+
+      window.onload = function() {
+        document.getElementById("imgSwap").src = imgHolder;
+      };
 
       function clmg(t) {
         message(t.src);
