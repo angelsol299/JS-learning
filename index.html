@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
   </head>
-  <body onload="myFun()">
+  <body onload="myFun('body')">
     <div id="wrapper">Page 1</div>
     <form name="myForm">
       <input type="button" value="click1" id="id1" />
@@ -19,8 +19,10 @@
         console.dir(this);
         output.innerHTML = "WORKED";
 
+        window.onload = fuction (event){myFun("window")};
+
         function myFun() {
-          output.innerHTML = "Welcome all loaded";
+          output.innerHTML = "Welcome all loaded" + a;
         }
       }
     </script>
