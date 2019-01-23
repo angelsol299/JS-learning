@@ -17,6 +17,10 @@
       var imgHolder =
         "https://www.tomorrowland.com/src/Frontend/Themes/tomorrowland/Core/Layout/images/opengraph/tomorrowland.jpg";
 
+      document.getElementById("imgSwap").onclick = function() {
+        message("clicked");
+      };
+
       window.onload = function() {
         document.getElementById("imgSwap").src = imgHolder;
       };
