@@ -13,7 +13,9 @@
       <input type="button" onclick="sendInfo()" value="submit" />
     </form>
     <script>
-      function sendInfo() {}
+      function sendInfo() {
+        message("test");
+      }
 
       function message(m) {
         document.getElementById("wrapper").innerHTML = m;
