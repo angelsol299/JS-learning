@@ -7,38 +7,7 @@
   </head>
   <body>
     <div id="wrapper">Page 1</div>
-    <img
-      id="imgSwap"
-      onmouseover="clmg(this)"
-      onmouseout="blmg(this)"
-      width="600px"
-    />
-    <script>
-      var imgHolder =
-        "https://www.tomorrowland.com/src/Frontend/Themes/tomorrowland/Core/Layout/images/opengraph/tomorrowland.jpg";
-
-      document.getElementById("imgSwap").onclick = function() {
-        message("clicked");
-      };
-
-      window.onload = function() {
-        document.getElementById("imgSwap").src = imgHolder;
-      };
-
-      function clmg(t) {
-        message(t.src);
-        imgHolder = t.src;
-        t.src =
-          "https://www.tomorrowland.com/src/Frontend/Themes/tomorrowland/Core/Layout/images/timeline/2017-1.jpg";
-      }
-
-      function blmg(t) {
-        t.src = imgHolder;
-      }
-
-      function message(m) {
-        document.getElementById("wrapper").innerHTML = m;
-      }
-    </script>
+    <form>First Name: <input type="text" id="e1" value="Laurance" /></form>
+    <script></script>
   </body>
 </html>
