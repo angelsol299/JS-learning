@@ -14,7 +14,8 @@
     </form>
     <script>
       function sendInfo() {
-        console.dir(event.target.parentElement.e1.value);
+        var p = event.target.parentElement;
+        console.dir(p.e1.value);
         message("test");
       }
 
