@@ -15,8 +15,8 @@
     <script>
       function sendInfo() {
         var p = event.target.parentElement;
-        console.dir(p.e1.value);
-        message("test");
+        console.dir(e1.value);
+        message(p.e1.value + " " + p.e2.value);
       }
 
       function message(m) {
