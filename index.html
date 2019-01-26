@@ -13,15 +13,10 @@
       Name: <input type="text" name="e2" value="Sveskis" />
       <input type="button" onclick="sendInfo()" value="submit" />
     </form>
-    <form>
-      First Name: <input type="text" name="e1" value="Laurance" /> Last Name:
-      <input type="text" name="e2" value="Sveskis" />
-      <input type="button" onclick="sendInfo()" value="submit" />
-    </form>
     <script>
       function cFun() {
-        var p = event.target.parentElement;
-        message("change to " + p.e1.value + " " + p.e2.value);
+        var p = event.target.value;
+        message("change to " + p);
       }
 
       function sendInfo() {
