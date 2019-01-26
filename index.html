@@ -15,11 +15,11 @@
     </form>
     <script>
       function cFun() {
-        var p = event.target.value;
-        if (p.name === "a1") {
-          message("First Name change to " + p);
+        var p = event.target;
+        if (p.name === "e1") {
+          message("First Name change to " + p.value);
         } else {
-          message("Last Name change to " + p);
+          message("Last Name change to " + p.value);
         }
       }
 
