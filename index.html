@@ -8,8 +8,9 @@
   <body>
     <div id="wrapper">Page 1</div>
     <form>
-      First Name: <input type="text" name="e1" value="Laurance" /> Last Name:
-      <input type="text" name="e2" value="Sveskis" />
+      First Name:
+      <input type="text" name="e1" value="Laurance" onchange="cFun()" /> Last
+      Name: <input type="text" name="e2" value="Sveskis" />
       <input type="button" onclick="sendInfo()" value="submit" />
     </form>
     <form>
@@ -18,6 +19,11 @@
       <input type="button" onclick="sendInfo()" value="submit" />
     </form>
     <script>
+      function cFun() {
+        var p = event.target.parentElement;
+        message("change to " + p.e1.value + " " + p.e2.value);
+      }
+
       function sendInfo() {
         var p = event.target.parentElement;
         console.dir(e1.value);
