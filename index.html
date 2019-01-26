@@ -9,14 +9,18 @@
     <div id="wrapper">Page 1</div>
     <form>
       First Name:
-      <input type="text" name="e1" value="Laurance" onchange="cFun()" /> Last
-      Name: <input type="text" name="e2" value="Sveskis" />
+      <input type="text" name="e1" value="Laurance" onchange="cFun()" />
+      <br />Last Name: <input type="text" name="e2" value="Sveskis" /> <br />
       <input type="button" onclick="sendInfo()" value="submit" />
     </form>
     <script>
       function cFun() {
         var p = event.target.value;
-        message("change to " + p);
+        if (p.name === "a1") {
+          message("First Name change to " + p);
+        } else {
+          message("Last Name change to " + p);
+        }
       }
 
       function sendInfo() {
