@@ -12,17 +12,21 @@
         <option value="">Select</option>
         <option value="150x50">Small</option>
         <option value="350x50">Medium</option>
-        <option value="750x50">Large</option>
-      </select>
+        <option value="750x50">Large</option> </select
+      ><br />
+      <input type="text" />
       <img
+        width="400px"
         src="https://d49r1np2lhhxv.cloudfront.net/www/admin/uploads/images/ImagineEDMPic.jpg"
         id="myImage"
       />
     </form>
     <script>
-
-      imgU(){
-
+      function imgU() {
+        console.dir(event.target);
+        console.dir(event.target.value);
+        if (event.target.type == "select-one") {
+        }
       }
     </script>
   </body>
