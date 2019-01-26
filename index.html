@@ -8,30 +8,13 @@
   <body>
     <div id="wrapper">Page 1</div>
     <form>
-      First Name:
-      <input type="text" name="e1" value="Laurance" onblur="cFun()" />
-      <br />Last Name: <input type="text" name="e2" value="Sveskis" /> <br />
-      <input type="button" onclick="sendInfo()" value="submit" />
+      <select onchange="imgU()">
+        <option value="">Select</option>
+        <option value="150x50">Small</option>
+        <option value="350x50">Medium</option>
+        <option value="750x50">Large</option>
+      </select>
     </form>
-    <script>
-      function cFun() {
-        var p = event.target;
-        if (p.name === "e1") {
-          message("First Name change to " + p.value);
-        } else {
-          message("Last Name change to " + p.value);
-        }
-      }
-
-      function sendInfo() {
-        var p = event.target.parentElement;
-        console.dir(e1.value);
-        message("welcome " + p.e1.value + " " + p.e2.value);
-      }
-
-      function message(m) {
-        document.getElementById("wrapper").innerHTML = m;
-      }
-    </script>
+    <script></script>
   </body>
 </html>
