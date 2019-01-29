@@ -15,11 +15,17 @@
       var imagesC = ["111", "222", "FF0000", "00FF00", "0000FF", "000", "333"];
 
       function startImg() {
+        swapImage();
         setInterval(swapImage, 2000);
       }
 
       function swapImage() {
         imagePlace++;
+
+        if (imagePlace > images.length) {
+          imagePlace = 0;
+        }
+
         var myImage = document.getElementById("myImage");
         myImage.src =
           "http://via.placeholder.com/350x150/" +
