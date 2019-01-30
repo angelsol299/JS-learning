@@ -6,16 +6,17 @@
     <title>Document</title>
   </head>
   <body>
-    <div id="wrappert">JS Course</div>
+    <div id="wrapper">JS Course</div>
     <input type="text" name="myNumber" onkeypress="numCheck()" />
-  </body>
-  <script>
-    function numCheck() {
-      event.target.value;
-    }
 
-    function message(m) {
-      document.getElementById("wrapper").innerHTML = m;
-    }
-  </script>
+    <script>
+      function numCheck() {
+        message(event.target.value);
+      }
+
+      function message(m) {
+        document.getElementById("wrapper").innerHTML = m;
+      }
+    </script>
+  </body>
 </html>
