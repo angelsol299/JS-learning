@@ -7,11 +7,17 @@
   </head>
   <body>
     <div id="wrapper">JS Course</div>
-    <input type="text" name="myNumber" onkeypress="numCheck()" />
+    <input
+      type="text"
+      name="myNumber"
+      onkeypress="return numCheck()"
+      onpaste="return true"
+    />
 
     <script>
       function numCheck() {
-        message(event.key);
+        message(isNaN(event.key));
+        return isNaN(event.key);
       }
 
       function message(m) {
