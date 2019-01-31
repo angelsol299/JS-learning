@@ -32,11 +32,18 @@
     </div>
     <div class="box" ondrop="dDrop()"></div>
     <script>
+      var holderItem;
       function dStart() {
         message("drag started");
       }
       function nDrop() {
         event.preventDefault();
+      }
+
+      function dDrop() {
+        message("drop it!");
+        if (event.target.className === "box") {
+        }
       }
     </script>
   </body>
