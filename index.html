@@ -15,7 +15,11 @@
 
     <script>
       function valForm() {
-        console.dir(event.target);
+        var p = event.target.children;
+        if (p.firstName === "") {
+          return false;
+        }
+        console.log(event.target.children.firstName);
         return false;
       }
     </script>
