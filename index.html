@@ -32,7 +32,7 @@
     </div>
     <div class="box" ondrop="dDrop()"></div>
     <script>
-      var holderItem;
+      var holderItem = event.target;
       function dStart() {
         message("drag started");
       }
@@ -43,6 +43,7 @@
       function dDrop() {
         message("drop it!");
         if (event.target.className === "box") {
+          event.target.appendChild(holderItem);
         }
       }
     </script>
