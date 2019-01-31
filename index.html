@@ -7,7 +7,7 @@
   </head>
   <body>
     <div id="wrapper">JS Course</div>
-    <form action="index2.html" method="get" onsubmit="return valForm()">
+    <form method="get" onsubmit="return valForm()">
       <input type="submit" value="submit" />
       <input type="text" id="firstName" /> <input type="text" id="lastName" />
       <input type="text" id="age" />
@@ -16,11 +16,12 @@
     <script>
       function valForm() {
         var p = event.target.children;
-        if (p.firstName === "") {
+        if (p.firstName.value === "") {
+          message("needs a first name");
           return false;
         }
-        console.log(event.target.children.firstName);
-        return false;
+        console.log(p.firstName);
+        return true;
       }
     </script>
   </body>
