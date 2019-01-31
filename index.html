@@ -7,22 +7,6 @@
   </head>
   <body>
     <div id="wrapper">JS Course</div>
-    <input
-      type="text"
-      name="myNumber"
-      onkeypress="return numCheck()"
-      onpaste="return true"
-    />
-
-    <script>
-      function numCheck() {
-        message(isNaN(event.key));
-        return isNaN(event.key);
-      }
-
-      function message(m) {
-        document.getElementById("wrapper").innerHTML = m;
-      }
-    </script>
+    <form onsubmit="return valForm()"></form>
   </body>
 </html>
