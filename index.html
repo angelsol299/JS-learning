@@ -20,7 +20,13 @@
     <div id="wrapper">JS Course</div>
 
     <div class="box">
-      <div id="getEl" ondragstart="dStart()" draggable="true">
+      <div
+        id="getEl"
+        ondragstart="dStart()"
+        draggable="true"
+        ondrop="dDrop()"
+        ondragover="nDrop()"
+      >
         Drag me please
       </div>
     </div>
