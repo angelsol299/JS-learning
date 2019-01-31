@@ -7,8 +7,14 @@
   </head>
   <body>
     <div id="wrapper">JS Course</div>
-    <form onsubmit="return valForm()">
+    <form action="index2.html" method="get" onsubmit="return valForm()">
       <input type="submit" value="submit" />
     </form>
+
+    <script>
+      function valForm() {
+        return false;
+      }
+    </script>
   </body>
 </html>
