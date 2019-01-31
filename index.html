@@ -19,7 +19,16 @@
   <body>
     <div id="wrapper">JS Course</div>
 
-    <div class="box"><div id="getEl">Drag me please</div></div>
+    <div class="box">
+      <div id="getEl" ondragstart="dStart()" draggable="true">
+        Drag me please
+      </div>
+    </div>
     <div class="box"></div>
+    <script>
+      function dStart() {
+        message("drag started");
+      }
+    </script>
   </body>
 </html>
