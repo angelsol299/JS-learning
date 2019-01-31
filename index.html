@@ -1,50 +1,55 @@
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
+    <title>Complete JavaScript Course</title>
     <style>
       .box {
-        height: 100px;
-        width: 100px;
+        height: 200px;
+        width: 200px;
+        padding: 20px;
+        margin: 0 50px;
         display: inline-block;
         border: 1px solid black;
       }
-      #getEl {
+
+      #getEle {
         background-color: red;
       }
     </style>
   </head>
-  <body>
-    <div id="wrapper">JS Course</div>
 
-    <div class="box">
-      <div
-        id="getEl"
-        ondragstart="dStart()"
-        draggable="true"
-        ondrop="dDrop()"
-        ondragover="nDrop()"
-      >
-        Drag me please
+  <body>
+    <div id="wrapper">Complete JavaScript Course</div>
+    <div class="box" ondrop="dDrop()" ondragover="nDrop()">
+      1
+      <div id="getEle" ondragstart="dStart()" draggable="true">
+        Drag Me Please!
       </div>
     </div>
-    <div class="box" ondrop="dDrop()"></div>
+    <div class="box" ondrop="dDrop()" ondragover="nDrop()">2</div>
+    <div class="box" ondrop="dDrop()" ondragover="nDrop()">3</div>
+    <div class="box" ondrop="dDrop()" ondragover="nDrop()">4</div>
     <script>
-      var holderItem = event.target;
+      var holderItem;
+
       function dStart() {
         message("drag started");
+        holderItem = event.target;
       }
+
       function nDrop() {
         event.preventDefault();
       }
 
       function dDrop() {
-        message("drop it!");
-        if (event.target.className === "box") {
+        event.preventDefault();
+        message("Drop It");
+        if (event.target.className == "box") {
           event.target.appendChild(holderItem);
         }
+      }
+
+      function message(m) {
+        document.getElementById("wrapper").innerHTML = m;
       }
     </script>
   </body>
