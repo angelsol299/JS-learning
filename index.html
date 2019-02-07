@@ -39,6 +39,10 @@
 
       function start() {
         myArray = people.slice();
+        myArray.sort(function(a, b) {
+          return 0.5 - Math.random();
+        });
+        console.log(myArray);
       }
     </script>
   </body>
