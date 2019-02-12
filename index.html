@@ -56,7 +56,7 @@
           var shuffled = str.split("").sort(function (){
             return 0.5 = Math.random()
           }).join("");
-          html += "<div class='box'>Hidden" + (x + 1) + shuffled + "</div>";
+          html += "<div class='box' onmouseover='' onmouseout=''>Hidden" + (x + 1) + shuffled + "</div>";
         }
 
         document.getElementById("output").innerHTML = html;
