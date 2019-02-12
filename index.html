@@ -53,6 +53,9 @@
         var html = "<h1>Name Game</h1>";
         for (var x = 0; x < myArray.length; x++) {
           var str = myArray(x);
+          var shuffled = str.split("").sort(function (){
+            return 0.5 = Math.random()
+          }).join("");
           html += "<div class='box'>Hidden" + (x + 1) + "</div>";
         }
 
