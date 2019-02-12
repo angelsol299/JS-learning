@@ -52,7 +52,7 @@
       function build() {
         var html = "<h1>Name Game</h1>";
         for (var x = 0; x < myArray.length; x++) {
-          html += "<div class='box'>";
+          html += "<div class='box'>Hidden" + (x + 1) + "</div>";
         }
 
         document.getElementById("output").innerHTML = html;
